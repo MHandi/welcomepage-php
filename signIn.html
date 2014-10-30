@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Sign In | HANDI</title>
+
+    <!-- jQuery file。must be add before bootstrap.min.js -->
+    <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet"/>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        /* http://css-tricks.com/perfect-full-page-background-image/ */
+        html {
+            background: url(assets/bamboo.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        body {
+            padding-top: 20px;
+            font-size: 16px;
+            font-family: "Open Sans", serif;
+            background: transparent;
+        }
+
+        h1 {
+            font-family: "Abel", Arial, sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+        }
+
+        /* Override B3 .panel adding a subtly transparent background */
+        .panel {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .margin-base-vertical {
+            margin: 40px 0;
+        }
+
+        .input-group {
+            margin-bottom: 15px; /*modify the margin space for the input*/
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+<div class="container-fluid margin-base-vertical  ">
+
+    <section class='frame primary '>
+        <div class='row-fluid'>
+
+            <div class="col-md-8 col-md-offset-2 panel panel-default">
+                <div class="col-md-5">
+
+                    <form>
+                        <legend>Sign in to HANDI</legend>
+                        <fieldset class="input-group">
+
+                            <div class="controls">
+                                <input autofocus="autofocus" id="input_usrnme" name="" type="text" class="form-control"
+                                       placeholder="Username">
+
+                                <p class="help-block">Case sensitive</p>
+                            </div>
+
+                            <div class="controls">
+                                <input autofocus="autofocus" id="input_psswd" name="" type="text" class="form-control"
+                                       placeholder="Password">
+
+                                <p class="help-block"><a href=""
+                                                         data-submit-email-address="web_user[login]">Forgot
+                                    your password?</a></p>
+                                <fieldset class="form-actions">
+                                    <input
+                                            class="btn btn-primary btn-block-phone btn-large create" name="commit"
+                                            id="btnSignin" type="button" value="Sign in"/>
+                                </fieldset>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+
+                <div class="col-md-5">
+                    <!--add a link for sign up webpage-->
+                    <legend><strong>Need an account? Create One</strong></legend>
+
+
+                    <ul class='spaced-items'>
+                        <li>content reserve to be modified here.</li>
+                        <li>Powerful command line client tools and a web management console to launch and manage your
+                            applications
+                        </li>
+                        <li>Pre-created quickstarts to instantaneously boot your favorite application framework</li>
+                        <li>A vibrant community backed by an army of developers, evangelists, and OpenShift devotees.
+                        </li>
+                        <li>A wide range of developer resources, including technology specific get started pages, how-to
+                            blog posts and videos.
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--row -->
+</div>
+<!--container-->
+
+</body>
+
+
+<!--edit the css of footer here-->
+<div id="footer" style="">
+    <div class="container">
+        <a href='http://handihealth.org/'>
+            <img alt='HANDI HEALTH' src='http://handihealth.org/wp-content/uploads/2013/02/Header-RGB1.jpg'>
+        </a>
+
+        <p class="muted credit">Copyright &copy; 2014 <a href="http://handihealth.org">HANDI HEAHLTH.</a>
+        </p>
+    </div>
+</div>
+
+
+<!--add js function to submit the data-->
+<script>
+    transport_form_data("submit-email-address", ":input:not(input[type=hidden]):first");
+</script>
+
+</html>
