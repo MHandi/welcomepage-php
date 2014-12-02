@@ -6,8 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Unirest' => array($vendorDir . '/mashape/unirest-php/lib'),
     'Symfony\\Component\\EventDispatcher\\' => array($vendorDir . '/symfony/event-dispatcher'),
     'Stormpath\\' => array($vendorDir . '/stormpath/sdk/src'),
+    'Smtpapi' => array($vendorDir . '/sendgrid/smtpapi/lib'),
+    'SendGrid' => array($vendorDir . '/sendgrid/sendgrid/lib'),
     'Guzzle\\Stream' => array($vendorDir . '/guzzle/stream'),
     'Guzzle\\Parser' => array($vendorDir . '/guzzle/parser'),
     'Guzzle\\Http' => array($vendorDir . '/guzzle/http'),

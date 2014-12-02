@@ -1,5 +1,6 @@
 {
-   "require": {
-     "stormpath/sdk": "1.0.*@beta"
-   }
- }
+    "require": {
+        "stormpath/sdk": "1.0.*@beta",
+        "sendgrid/sendgrid": "2.1.1"
+    }
+}
