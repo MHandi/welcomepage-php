@@ -90,8 +90,8 @@
                 /  Fill in the variables below with your SendGrid
                 /  username and password.
                 ====================================================*/
-                $sg_username = "mmylesmeng365";
-                $sg_password = "Major?1015";
+                $sg_username = "DemoYM";
+                $sg_password = "SendGrid123";
 
 
                 /* CREATE THE SENDGRID MAIL OBJECT
@@ -106,11 +106,10 @@
                 ====================================================*/
                 //                try {
                 $mail->
-                setFrom("mylesmeng@gmail.com")->
-                addTo("ian@freshehr.com")->
-                addTo("mylesmeng@gmail.com")->
-                setSubject("Handihealth Account created ")->
-                setText("Hi Ian, An user has created an account by Stormpath database, please check api.stormpath.com")->
+                setFrom("yujie.myler.meng@gmail.com")->
+                addTo("yujie.myler.meng@gmail.com")->
+                setSubject("Demo Account created ")->
+                setText("Hi, An user has created an account by Stormpath database, please check api.stormpath.com")->
                 setHtml("<table style=\"border: solid 1px #000; background-color: #666; font-family: verdana, tahoma, sans-serif; color: #fff;\">
 <tr> <td> <h2>Hi Ian,</h2> <p>An user has created an account, please check.</p>
  <br> Cheers <br> HandiHealth CIC
@@ -175,10 +174,6 @@
 <footer>
     <section>
         <div class='container panel-footer'>
-            <!--            <a href='http://handihealth.org/'>-->
-            <!--                <img alt='HANDI HEALTH' -->
-            <!--                     src='http://handihealth.org/wp-content/uploads/2013/02/Header-RGB1.jpg'>-->
-            <!--            </a>-->
             <div class="pull-left">
                 &#64 2014 Handi Health Community Interest Company - Registered in England number 07999302 Registered
                 Office
